@@ -1,0 +1,33 @@
+.our-expertise .container {
+    flex-direction: column;
+    align-items: center;
+}
+.our-expertise .list {
+    display: flex;
+}
+.our-expertise .list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.project-thumbnails {
+    display: flex;
+}
+.our-expertise-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.our-expertise-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: var(--white);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: bold;
+    text-transform: uppercase;
+}
