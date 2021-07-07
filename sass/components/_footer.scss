@@ -44,6 +44,15 @@
     background-color: #43444d;
     color: var(--white);
 }
+.footer .icon:hover,
+.footer .icon:focus {
+    background-color: var(--brand-color);
+    color: var(--white);
+}
+
+.footer .icon-list-item:not(:last-child) {
+    margin-right: 10px;
+}
 
 .subscription-form-block {
     display: flex;
