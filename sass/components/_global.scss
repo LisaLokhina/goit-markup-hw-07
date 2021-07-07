@@ -1,17 +1,18 @@
 .logo {
     font-family: $logoFont;
     font-size: 26px;
-    color: var(--black);
     text-decoration: none;
     line-height: 1.17;
-}
-.logo-footer {
-    color: var(--white);
-}
-.logo-highlight {
     color: var(--brand-color);
-}
 
+    &__highlight {
+        color: var(--black);
+
+        &--white {
+            color: var(--white);
+        }
+    }
+}
 .list {
     list-style: none;
 }
