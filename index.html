@@ -460,56 +460,56 @@
       </div>
     </footer>
     <aside class="backdrop is-hidden" data-modal>
-      <div class="modal-window">
+      <div class="backdrop__modal-window">
         <button class="close-btn" data-modal-close>
-          <svg class="icon" width="30" height="30">
+          <svg class="close-btn__icon" width="30" height="30">
             <use href="./images/icons.svg#icon-close" />
           </svg>
         </button>
-        <h2 class="secondary-header modal-window-header">
+        <h2 class="secondary-header--modal">
           Оставьте свои данные, мы вам перезвоним
         </h2>
         <form action="#" class="contact-form">
           <div class="field-group">
-            <label for="name" class="field-label">Имя</label>
+            <label for="name" class="field-group__label">Имя</label>
             <input
               type="text"
-              class="modal-window-field"
+              class="field-group__field"
               name="name"
               id="name"
             />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="field-group__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black" />
             </svg>
           </div>
           <div class="field-group">
-            <label for="telephone" class="field-label">Телефон</label>
+            <label for="telephone" class="field-group__label">Телефон</label>
             <input
               type="tel"
-              class="modal-window-field"
+              class="field-group__field"
               name="telephone"
               id="telephone"
             />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="field-group__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black" />
             </svg>
           </div>
           <div class="field-group">
-            <label for="email" class="field-label">Почта</label>
+            <label for="email" class="field-group__label">Почта</label>
             <input
               type="email"
-              class="modal-window-field"
+              class="field-group__field"
               name="email"
               id="email"
             />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="field-group__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black" />
             </svg>
           </div>
           <div class="field-group">
-            <label for="comment" class="field-label">Комментарий</label>
+            <label for="comment" class="field-group__label">Комментарий</label>
             <textarea
-              class="modal-window-field textarea"
+              class="field-group__field field-group__field--textarea"
               name="comment"
               rows="5"
               placeholder="Введите текст"
@@ -519,26 +519,34 @@
           <div class="consent-block">
             <input
               type="checkbox"
-              class="consent-checkbox"
+              class="consent-block__checkbox"
               name="consent"
               id="consent"
             />
-            <label for="consent" class="consent-label"
-              ><svg class="checkbox-icon default" width="16" height="15">
+            <label for="consent" class="consent-block__label"
+              ><svg
+                class="consent-block__checkbox-icon--default"
+                width="16"
+                height="15"
+              >
                 <use href="./images/icons.svg#icon-checkbox-default" />
               </svg>
-              <svg class="checkbox-icon checked" width="16" height="15">
+              <svg
+                class="consent-block__checkbox-icon--checked"
+                width="16"
+                height="15"
+              >
                 <use href="./images/icons.svg#icon-checkbox-checked" />
               </svg>
-              <span class="consent-text">
+              <span class="consent-block__text">
                 Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="terms-and-conditions-anchor"
-                  >Условия договора</a
-                >
+                <a href="#" class="consent-block__anchor">Условия договора</a>
               </span>
             </label>
           </div>
-          <button type="submit" class="button modal-btn">Отправить</button>
+          <button type="submit" class="button button--modal modal-btn">
+            Отправить
+          </button>
         </form>
       </div>
     </aside>

@@ -9,6 +9,12 @@
 .visually-hidden {
   display: none;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms, visibility 250ms;
+}
 .site-nav,
 .filter-button {
   display: inline-block;
@@ -29,6 +35,11 @@
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+
+  &--modal {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 }
 .anchor {
   color: var(--main-color);

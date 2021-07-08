@@ -16,13 +16,16 @@
   &:focus {
     background-color: var(--brand-color-hover);
   }
+  &__icon-send {
+    margin-left: 10px;
+  }
   &--subscribe {
     display: flex;
     padding: 10px 29px;
     align-items: center;
     margin-left: 12px;
   }
-  &__icon-send {
-    margin-left: 10px;
+  &--modal {
+    align-self: center;
   }
 }
