@@ -107,11 +107,11 @@ img {
   color: var(--white);
 }
 
-.list, .site-nav, .auth-nav, .our-benefits__list, .our-expertise__list, .our-team__list, .social-media {
+.list, .site-nav, .auth-nav, .our-benefits__list, .our-expertise__list, .our-team__list, .social-media, .our-clients__list {
   list-style: none;
 }
 
-.section, .hero, .our-benefits, .our-expertise, .our-team {
+.section, .hero, .our-benefits, .our-expertise, .our-team, .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -125,7 +125,7 @@ img {
   display: inline-block;
 }
 
-.container, .page-header__header, .our-benefits__container, .our-expertise__container, .our-team__container {
+.container, .page-header__header, .our-benefits__container, .our-expertise__container, .our-team__container, .our-clients__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -154,7 +154,7 @@ img {
   background-color: var(--brand-color-hover);
 }
 
-.secondary-header, .our-benefits__secondary-header, .our-expertise__secondary-header, .our-team__secondary-header {
+.secondary-header, .our-benefits__secondary-header, .our-expertise__secondary-header, .our-team__secondary-header, .our-clients__secondary-header {
   color: var(--header-color);
   font-weight: bold;
   font-size: 36px;
@@ -163,13 +163,13 @@ img {
   margin-bottom: 50px;
 }
 
-.anchor, .site-nav__anchor, .site-nav__anchor--active, .auth-nav__anchor {
+.anchor, .site-nav__anchor, .site-nav__anchor--active, .auth-nav__anchor, .client-block__anchor {
   color: var(--main-color);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.anchor:hover, .site-nav__anchor:hover, .site-nav__anchor--active:hover, .auth-nav__anchor:hover, .anchor:focus, .site-nav__anchor:focus, .site-nav__anchor--active:focus, .auth-nav__anchor:focus, .anchor.active, .active.site-nav__anchor, .active.site-nav__anchor--active, .active.auth-nav__anchor {
+.anchor:hover, .site-nav__anchor:hover, .site-nav__anchor--active:hover, .auth-nav__anchor:hover, .client-block__anchor:hover, .anchor:focus, .site-nav__anchor:focus, .site-nav__anchor--active:focus, .auth-nav__anchor:focus, .client-block__anchor:focus, .anchor.active, .active.site-nav__anchor, .active.site-nav__anchor--active, .active.auth-nav__anchor, .active.client-block__anchor {
   color: var(--brand-color);
 }
 
@@ -410,7 +410,7 @@ img {
   fill: currentColor;
 }
 
-.our-clients-list {
+.our-clients__list {
   display: flex;
   justify-content: center;
 }
@@ -424,37 +424,31 @@ img {
   margin-right: 30px;
 }
 
-.client-block-anchor {
+.client-block__anchor {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-block-anchor:hover,
-.client-block-anchor:focus {
-  color: var(--brand-color);
-  border: 1px solid var(--brand-color);
-}
-
-.client-block-anchor {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-logo {
+.client-block__anchor:hover, .client-block__anchor:focus {
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+
+.client-block__anchor:hover .client-block__logo, .client-block__anchor:focus .client-block__logo {
+  fill: var(--brand-color);
+}
+
+.client-block__logo {
   fill: var(--icon-grey);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-block-anchor:hover .our-clients-logo,
-.client-block-anchor:focus .our-clients-logo {
-  fill: var(--brand-color);
-}
-
-.section .container, .hero .container, .our-benefits .container, .our-expertise .container, .our-team .container, .section .page-header__header, .hero .page-header__header, .our-benefits .page-header__header, .our-expertise .page-header__header, .our-team .page-header__header, .section .our-benefits__container, .hero .our-benefits__container, .our-benefits .our-benefits__container, .our-expertise .our-benefits__container, .our-team .our-benefits__container, .section .our-expertise__container, .hero .our-expertise__container, .our-benefits .our-expertise__container, .our-expertise .our-expertise__container, .our-team .our-expertise__container, .section .our-team__container, .hero .our-team__container, .our-benefits .our-team__container, .our-expertise .our-team__container, .our-team .our-team__container {
+.section .container, .hero .container, .our-benefits .container, .our-expertise .container, .our-team .container, .our-clients .container, .section .page-header__header, .hero .page-header__header, .our-benefits .page-header__header, .our-expertise .page-header__header, .our-team .page-header__header, .our-clients .page-header__header, .section .our-benefits__container, .hero .our-benefits__container, .our-benefits .our-benefits__container, .our-expertise .our-benefits__container, .our-team .our-benefits__container, .our-clients .our-benefits__container, .section .our-expertise__container, .hero .our-expertise__container, .our-benefits .our-expertise__container, .our-expertise .our-expertise__container, .our-team .our-expertise__container, .our-clients .our-expertise__container, .section .our-team__container, .hero .our-team__container, .our-benefits .our-team__container, .our-expertise .our-team__container, .our-team .our-team__container, .our-clients .our-team__container, .section .our-clients__container, .hero .our-clients__container, .our-benefits .our-clients__container, .our-expertise .our-clients__container, .our-team .our-clients__container, .our-clients .our-clients__container {
   flex-direction: column;
   align-items: center;
 }
@@ -503,7 +497,7 @@ img {
   transform: translateY(0);
 }
 
-.filters.list, .filters.site-nav, .filters.auth-nav, .filters.our-benefits__list, .filters.our-expertise__list, .filters.our-team__list, .filters.social-media {
+.filters.list, .filters.site-nav, .filters.auth-nav, .filters.our-benefits__list, .filters.our-expertise__list, .filters.our-team__list, .filters.social-media, .filters.our-clients__list {
   font-size: 0;
 }
 
@@ -550,7 +544,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .container, .footer .page-header__header, .footer .our-benefits__container, .footer .our-expertise__container, .footer .our-team__container {
+.footer .container, .footer .page-header__header, .footer .our-benefits__container, .footer .our-expertise__container, .footer .our-team__container, .footer .our-clients__container {
   padding: 60px 15px;
 }
 
