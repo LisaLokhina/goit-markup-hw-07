@@ -460,6 +460,10 @@ img {
   fill: currentColor;
 }
 
+.our-clients__container {
+  flex-direction: column;
+}
+
 .our-clients__list {
   display: flex;
   justify-content: center;

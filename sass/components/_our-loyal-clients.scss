@@ -3,6 +3,7 @@
 
   &__container {
     @extend .container;
+    flex-direction: column;
   }
   &__secondary-header {
     @extend .secondary-header;
